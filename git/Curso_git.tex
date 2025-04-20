@@ -1,38 +1,36 @@
 // O que o Git:
 O Git é um sistema de controle de versão distribuído, que acompanha as alterações em arquivos ao longo do tempo, 
 permitindo que se voltem a versões anteriores, trabalhem em projetos colaborativamente e gerenciem conflitos.
-
 // O que e o GitHub
 O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. 
 Ele permite que desenvolvedores colaborem em projetos, compartilhem código e gerenciem repositórios de forma eficiente.
 
-
-Comandos do Git 
+Comandos do Git:
 
 > O comando DIR: mostra todos os arquivos dentro de um diretorio
-> O comando CD (Change Directory), serve para navegar de um diretorio a outro
-> O comando git init: Inicializa o repositório / Ao iniciar esse repositorio, o git
-    cria uma pasta oculta, chamada .git/
-> O comando git add:  e usando para colocar um arquivo no versionamento do git
-    esse comando encaimnha as mudanças para o Stage
+> O comando CD: (Change Directory), serve para navegar de um diretorio a outro, pasando o caminho
+> O comando git init: Inicializa o repositório / Ao iniciar esse repositorio, o git cria uma pasta oculta, chamada .git/
+> O comando git add:  e usando para colocar um arquivo no versionamento do git, esse comando encaimnha as mudanças para o Stage
     - o git add. ira adicionar todos os arquivos ao Stage 
 > O comando git status: retorna o status atual do repositorio. 
     - Quantos breanch existes
     - Quantos comists existem
     - fala se existem ou não, arquivos que ainda não estão na area de Stage
-
-   *********** git config --global --add safe.directory
+Nota: git config --global --add safe.directory (serve para tornar um repositorio como seguro)
 
 Antes de enviar as mudanças do Stage para o versionamento do git e necesario configurar nosso
-usuario no Git, pois toda alteração precisa ter um autor, isso e feito no seguente comando
-
-> nome : git config --global user.name Aaron Velasquez
+usuario no Git, pois toda alteração precisa ter um autor, isso e feito no seguinte comando
+> nome : git config --global user.name Aaron
 > email : git config --global user.email aaronreizork1996@gmail.com
-
 Agora sim esta autorizado a subir as alteração ao versionamento
 
 > O comando git commit -m "mensagem de alteração": seria  o comando que envio os arquviso do Stage para a pasta .git
-
 Para subir novas mudanças no versionamento, e necessario passar pelo (git add .) e depois pelo (git commit -m "")
+
+> O comando git log: retorna todas as versoões que existem do projeto, cada commit tem um identificador
+unico, o comando mostra tambem o autor, data, e a mensagem do commit 
+O HEAD -> Aponta para a versão na aqual em que eu estou 
+
+> Comando git checkout : permite volver a versoões anteriores pasando os 6 primeiros valores do commit
 
  
