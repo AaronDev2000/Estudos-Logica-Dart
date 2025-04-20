@@ -29,8 +29,18 @@ Para subir novas mudanças no versionamento, e necessario passar pelo (git add .
 
 > O comando git log: retorna todas as versoões que existem do projeto, cada commit tem um identificador
 unico, o comando mostra tambem o autor, data, e a mensagem do commit 
-O HEAD -> Aponta para a versão na aqual em que eu estou 
+O HEAD -> Aponta para a versão em que você esta
 
 > Comando git checkout : permite volver a versoões anteriores pasando os 6 primeiros valores do commit
+porem, e apenas para visualizar verções anterior, pois, não e boa pratica mudar alguma coisa
+no pasado, para alterar o futura, e para retornar ao ultimo commit (ultima versão) pode executar o 
+comando git checkout master
+
+Para evitar conflitos de trabalho em equipo, o git fornece uma forma de trabalhar em diferentes linhas do tempo
+
+Breanch: Todo breanch tem que devirar de um commit 
+Quando e criado uma breanch, voce esta copiando o status daquele ultimo commit,
+Trabalha ndo nessa unica breanch, não ha necesidade de baixar os commit que os demais programadores estão fazendo
+No final do dia, devem subir todas as modificações feitas nas breanch, isso e feito a travez do merge
 
  
