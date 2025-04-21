@@ -8,19 +8,25 @@ class Solution {
     var ordenar = separada.reversed;
     // Transformamos ela novamente em uma String, e juntamos a cadea de texto
     String agoraParaString = ordenar.join().toString();
-    // Agora a trasnformamos em uma int
-    int agoraInt = int.parse(agoraParaString);
-    // no if, verificamos se o valor inicial de X, e igual ao valor que foi reversado e reordenado
-    // caso seja igual retorna true, se não, retorna false
-    if (x == agoraInt) {
-      return true;
-    } else {
+    // Agora a trasnformamos em uma int, dentro de um try
+    // Pois ao receber numeros negativos, ocorre um erro de exeção
+    // pelo que automaticamente, podemos retornar false
+    try {
+      int agoraInt = int.parse(agoraParaString);
+      if (x == agoraInt && x >= 0) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
       return false;
     }
+    // no if, verificamos se o valor inicial de X, e igual ao valor que foi reversado e reordenado
+    // caso seja igual retorna true, se não, retorna false
   }
 }
 
 void main() {
   Solution objeto = Solution();
-  print(objeto.isPalindrome(121));
+  print(objeto.isPalindrome(10));
 }
