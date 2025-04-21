@@ -30,3 +30,5 @@ void main() {
   Solution objeto = Solution();
   print(objeto.isPalindrome(10));
 }
+
+// Logica aceita pelo leetCode
