@@ -1,16 +1,16 @@
 class Solution {
   bool isPalindrome(int x) {
-    // Transformamos o valor e x em uma String
+    // Transformamos o valor de x em uma String.
     String deIntParaTexto = x.toString();
-    // Separamos os carateres da string
+    // Separamos os caracteres da string.
     List<String> separada = deIntParaTexto.split('');
-    // Damos um reverse, para ordenar de tras para frente
+    // Damos um reverse, para ordenar de trás para frente.
     var ordenar = separada.reversed;
-    // Transformamos ela novamente em uma String, e juntamos a cadea de texto
+    // Transformamos novamente em uma String e juntamos a cadeia de texto.
     String agoraParaString = ordenar.join().toString();
-    // Agora a trasnformamos em uma int, dentro de um try
-    // Pois ao receber numeros negativos, ocorre um erro de exeção
-    // pelo que automaticamente, podemos retornar false
+    // Agora a transformamos em um int, dentro de um try,
+    // pois ao receber números negativos, ocorre um erro de exceção,
+    // pelo que automaticamente podemos retornar false.
     try {
       int agoraInt = int.parse(agoraParaString);
       if (x == agoraInt && x >= 0) {
@@ -21,8 +21,8 @@ class Solution {
     } catch (e) {
       return false;
     }
-    // no if, verificamos se o valor inicial de X, e igual ao valor que foi reversado e reordenado
-    // caso seja igual retorna true, se não, retorna false
+    // No if, verificamos se o valor inicial de x é igual ao valor que foi invertido e reordenado.
+    // Caso seja igual, retorna true; caso contrário, retorna false.
   }
 }
 
@@ -31,4 +31,4 @@ void main() {
   print(objeto.isPalindrome(10));
 }
 
-// Logica aceita pelo leetCode
+// Lógica aceita pelo LeetCode.

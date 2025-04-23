@@ -1,56 +1,53 @@
-// O que o Git:
+// O que é o Git:
 O Git é um sistema de controle de versão distribuído, que acompanha as alterações em arquivos ao longo do tempo, 
-permitindo que se voltem a versões anteriores, trabalhem em projetos colaborativamente e gerenciem conflitos.
-// O que e o GitHub
+permitindo que se volte a versões anteriores, trabalhe em projetos colaborativamente e gerencie conflitos.
+// O que é o GitHub:
 O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. 
 Ele permite que desenvolvedores colaborem em projetos, compartilhem código e gerenciem repositórios de forma eficiente.
 
 Comandos do Git:
 
-> O comando DIR: mostra todos os arquivos dentro de um diretorio
-> O comando CD: (Change Directory), serve para navegar de um diretorio a outro, pasando o caminho
-> O comando git init: Inicializa o repositório / Ao iniciar esse repositorio, o git cria uma pasta oculta, chamada .git/
-> O comando git add:  e usando para colocar um arquivo no versionamento do git, esse comando encaimnha as mudanças para o Stage
-    - o git add. ira adicionar todos os arquivos ao Stage 
-> O comando git status: retorna o status atual do repositorio. 
-    - Quantos breanch existes
-    - Quantos comists existem
-    - fala se existem ou não, arquivos que ainda não estão na area de Stage
-Nota: git config --global --add safe.directory (serve para tornar um repositorio como seguro)
+> O comando DIR: mostra todos os arquivos dentro de um diretório.
+> O comando CD: (Change Directory), serve para navegar de um diretório a outro, passando o caminho.
+> O comando git init: Inicializa o repositório. Ao iniciar esse repositório, o Git cria uma pasta oculta chamada .git/.
+> O comando git add: é usado para colocar um arquivo no versionamento do Git. Esse comando encaminha as mudanças para o Stage.
+    - O git add . irá adicionar todos os arquivos ao Stage.
+> O comando git status: retorna o status atual do repositório. 
+    - Quantos branches existem.
+    - Quantos commits existem.
+    - Indica se existem ou não arquivos que ainda não estão na área de Stage.
+Nota: git config --global --add safe.directory (serve para tornar um repositório como seguro).
 
-Antes de enviar as mudanças do Stage para o versionamento do git e necesario configurar nosso
-usuario no Git, pois toda alteração precisa ter um autor, isso e feito no seguinte comando
-> nome : git config --global user.name Aaron
-> email : git config --global user.email aaronreizork1996@gmail.com
-Agora sim esta autorizado a subir as alteração ao versionamento
+Antes de enviar as mudanças do Stage para o versionamento do Git, é necessário configurar nosso
+usuário no Git, pois toda alteração precisa ter um autor. Isso é feito com os seguintes comandos:
+> Nome: git config --global user.name Aaron
+> E-mail: git config --global user.email aaronreizork1996@gmail.com
+Agora sim está autorizado a subir as alterações ao versionamento.
 
-> O comando git commit -m "mensagem de alteração": seria  o comando que envio os arquviso do Stage para a pasta .git
-Para subir novas mudanças no versionamento, e necessario passar pelo (git add .) e depois pelo (git commit -m "")
+> O comando git commit -m "mensagem de alteração": é o comando que envia os arquivos do Stage para a pasta .git.
+Para subir novas mudanças no versionamento, é necessário passar pelo (git add .) e depois pelo (git commit -m "").
 
-> O comando git log: retorna todas as versoões que existem do projeto, cada commit tem um identificador
-unico, o comando mostra tambem o autor, data, e a mensagem do commit 
-O HEAD -> Aponta para a versão em que você esta
+> O comando git log: retorna todas as versões que existem do projeto. Cada commit tem um identificador
+único. O comando mostra também o autor, data e a mensagem do commit. 
+O HEAD -> Aponta para a versão em que você está.
 
-> Comando git checkout : permite volver a versoões anteriores pasando os 6 primeiros valores do commit
-porem, e apenas para visualizar verções anterior, pois, não e boa pratica mudar alguma coisa
-no pasado, para alterar o futura, e para retornar ao ultimo commit (ultima versão) pode executar o 
-comando git checkout master
+> O comando git checkout: permite voltar a versões anteriores passando os 6 primeiros valores do commit.
+Porém, é apenas para visualizar versões anteriores, pois não é boa prática mudar algo no passado. Para alterar o futuro e retornar ao último commit (última versão), pode executar o 
+comando git checkout master.
 
-Para evitar conflitos de trabalho em equipo, o git fornece uma forma de trabalhar em diferentes linhas do tempo
+Para evitar conflitos de trabalho em equipe, o Git fornece uma forma de trabalhar em diferentes linhas do tempo.
 
-Branch - Teoria: Todo branch tem que devirar de um commit 
-Quando e criado uma branch, voce esta copiando o status daquele ultimo commit,
-Trabalhando nessa unica branch, não ha necesidade de baixar os commit que os demais programadores estão fazendo
-No final do dia, devem subir todas as modificações feitas nas brench, isso e feito a travez do merge
-(é possivel criar uma breanch dentro de uma outra)
- - Sempre que for desenvolver algo novo, debe criar uma breanch a partir da principal (master)
- - Em caso de ter commits mais novos, e minha branch seja antiga, posso jogar a branch principal
-    para minha branch
+Branch - Teoria: Todo branch deve derivar de um commit. 
+Quando é criada uma branch, você está copiando o status daquele último commit.
+Trabalhando nessa única branch, não há necessidade de baixar os commits que os demais programadores estão fazendo.
+No final do dia, devem subir todas as modificações feitas nas branches. Isso é feito através do merge.
+(É possível criar uma branch dentro de outra.)
+ - Sempre que for desenvolver algo novo, deve criar uma branch a partir da principal (master).
+ - Em caso de ter commits mais novos e minha branch ser antiga, posso trazer a branch principal
+   para minha branch.
 
-Breanch Pratica: 
-> O comando git branch: cria a branch, para começar a trabalhar nessa branch, deve fazer usso do comando
+Branch - Prática: 
+> O comando git branch: cria a branch. Para começar a trabalhar nessa branch, deve usar o comando
 git checkout e informar o nome da branch.
 
-Merge: Cada merge gera um commit 
-
- 
+Merge: Cada merge gera um commit.

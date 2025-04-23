@@ -1,14 +1,14 @@
-// Os metodos ja que pussem um comportamento fixo na classe pai ele pode ser reescrito na classe filho, para que o
-// comportamento seja diferente e deacordo com a sua classe
+// Os métodos, já que possuem um comportamento fixo na classe pai, podem ser reescritos na classe filha, para que o
+// comportamento seja diferente e de acordo com a sua classe.
 class Animal {
   Animal({required this.nome, required this.idade});
   String nome;
   int idade;
   void dormir() {
-    print('Durmio');
-  } // O metodo toString e quem retorna a instancia do meu objeto
-  // ao sobescreve-la, podemos manipular o que vai ser exbido na tela
-  // ao printar a minha instancia.
+    print('Dormiu');
+  } // O método toString é quem retorna a instância do meu objeto.
+  // Ao sobrescrevê-lo, podemos manipular o que vai ser exibido na tela
+  // ao imprimir a minha instância.
   @override
   String toString() {
     return 'Nome: $nome, Idade: $idade';
@@ -22,18 +22,18 @@ class Cachorro extends Animal {
     required this.segundoNome,
   });
   String segundoNome;
-  // A palavra reservada (@override) e o parametro que indica que sera sobreescrito o metodo da classe pai, para ser usado na classe filho
+  // A palavra reservada (@override) é o parâmetro que indica que será sobrescrito o método da classe pai, para ser usado na classe filha.
   @override
   void dormir() {
-    print('não esta dormido');
+    print('não está dormindo');
   }
 }
 
 void main() {
   Cachorro perro = Cachorro(nome: 'Rocki', idade: 2, segundoNome: 'cheverus');
   print(perro.segundoNome);
-  // Chamo o metodo da minha classe cachorro, que esta sendo sobescrito
+  // Chamo o método da minha classe Cachorro, que está sendo sobrescrito.
   perro.dormir();
-  // Print da instancia
+  // Imprimo a instância.
   print(perro);
 }

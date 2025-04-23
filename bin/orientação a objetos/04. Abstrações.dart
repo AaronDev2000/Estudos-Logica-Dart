@@ -1,33 +1,38 @@
 // Em Dart, uma classe abstrata é um tipo de classe que não pode ser instanciada diretamente, ou seja, 
-// não se pode criar objetos diretamente dessa classe. Ela serve como um modelo ou uma base para outras classes,
-// Uma classe abstrata pode inicializar um metodo, sem definir um corpotanento, para que as classes
-// filhas dela, possam sobescribir esses metodos e definam seus comportamento conforme necesario.
+// não se pode criar objetos diretamente dessa classe. Ela serve como um modelo ou uma base para outras classes.
+// Uma classe abstrata pode inicializar um método, sem definir um comportamento, para que as classes
+// filhas dela possam sobrescrever esses métodos e definam seu comportamento conforme necessário.
 
 abstract class Animal {
   Animal({required this.nome, required this.idade});
   String nome;
   int idade;
   void dormir() {
-    print('Durmio'); } 
-  // Metodo inicializado, e não definido, a classe filho e obrigado a implementar esse metodo
-  // Caso o comportamento seja definido, a classe filha não e obrigdada a implemeta-lo
-  void comer ();
+    print('Dormiu');
+  } 
+  // Método inicializado, mas não definido. A classe filha é obrigada a implementar esse método.
+  // Caso o comportamento seja definido, a classe filha não é obrigada a implementá-lo.
+  void comer();
   @override
   String toString() {
     return 'Nome: $nome, Idade: $idade';
   }
 }
+
 class Cachorro extends Animal {
   Cachorro({required super.nome, required super.idade, required this.segundoNome});
   String segundoNome;
   @override
   void dormir() {
-    print('não esta dormido');}
-  // metodo implementado
+    print('não está dormindo');
+  }
+  // Método implementado
   @override
   void comer() {
+    print('O cachorro está comendo');
   }
 }
+
 void main() {
   Cachorro perro = Cachorro(nome: 'Rocki', idade: 2, segundoNome: 'cheverus');
   print(perro.segundoNome);

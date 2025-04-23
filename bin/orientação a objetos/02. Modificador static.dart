@@ -1,28 +1,26 @@
-// Não e possivel usar um metodo ou chamar um atributo
-// Diretamente de uma clase, pois ambos pertencem aos objetos
-// que serão criados a partir dessa classe, então
-// Para ter um metodo ou atributo que possa ser chamado diretamente da classe
-// ele deve ser estatico (static)
+// Não é possível usar um método ou chamar um atributo
+// diretamente de uma classe, pois ambos pertencem aos objetos
+// que serão criados a partir dessa classe. Então,
+// para ter um método ou atributo que possa ser chamado diretamente da classe,
+// ele deve ser estático (static).
 
-// Obs, os atributos staticos não podem ser chamados pelos obejtos criados
-// a partir da mesma clase, pois eles pertencem apenas a aquela classe
-// e não a seus objetos
-// da mesma forma acontece com os metodos statics.
+// Obs: os atributos estáticos não podem ser chamados pelos objetos criados
+// a partir da mesma classe, pois eles pertencem apenas àquela classe
+// e não aos seus objetos.
+// Da mesma forma, isso acontece com os métodos estáticos.
 class GetAnimal {
-  // Atributo static
+  // Atributo estático
   static String nome = 'Aaron';
 
-  // Metodo static
+  // Método estático
   static String metodoStatic() {
-    return 'Ola Mundo';
+    return 'Olá Mundo';
   }
 }
-// Os metodos static não podem interajir com atributos,
-// ou outros metodos que não sejam static
+// Os métodos estáticos não podem interagir com atributos
+// ou outros métodos que não sejam estáticos.
 
 void main() {
   print(GetAnimal.nome);
   print(GetAnimal.metodoStatic());
 }
-
-
