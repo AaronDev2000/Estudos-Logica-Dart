@@ -8,7 +8,7 @@ Ele permite que desenvolvedores colaborem em projetos, compartilhem código e ge
 Comandos do Git:
 
 > O comando DIR: mostra todos os arquivos dentro de um diretório.
-> O comando CD: (Change Directory), serve para navegar de um diretório a outro, passando o caminho como uma String com ""
+> O comando CD: (Change Directory), serve para navegar de um diretório a outro, passando o caminho como uma String com "".
 > O comando git init: Inicializa o repositório. Ao iniciar esse repositório, o Git cria uma pasta oculta chamada .git/.
 > O comando git add: é usado para colocar um arquivo no versionamento do Git. Esse comando encaminha as mudanças para o Stage.
     - O git add . irá adicionar todos os arquivos ao Stage.
@@ -47,9 +47,11 @@ No final do dia, devem subir todas as modificações feitas nas branches. Isso �
    para minha branch.
 
 Branch - Prática: 
-> O comando git branch: cria a branch (nome-da-branch). Para começar a trabalhar nessa branch, deve usar o comando
-git checkout e informar o nome da branch.
+> O comando git branch (passando-nome-da-branch): cria a branch. Para começar a trabalhar nessa branch, deve usar o comando
+git checkout e informar o nome da branch para navegar até ela.
+    - O comando git branch, sem passar o nome da branch, mostra quantas branches existem e mostra o nome de cada uma delas.
 
-    Já dentro, podemos iniciar as alterações, agora vamos criar um commit na branch
+    Já dentro, podemos iniciar as alterações. Agora vamos criar um commit na branch.
 
-Merge: Cada merge gera um commit.
+Merge: Cada merge gera um commit, e esse processo deve ser realizado na branch master/main, informando o nome da branch 
+na qual você quer fazer a ação de merge.
