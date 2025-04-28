@@ -1,37 +1,35 @@
-Para suubir o repositorio ao github, primeiro e necesario criaum um repositorio vazio no github
- - Indo ao seu perfil do github, vai no icone de + e selecionar New repository
- - Colocar um nome unica ao seu repositorio
- - Colocar a descrição, para falar do que trata o repositorio
- - Marcar a opção conforme necesario, repositorio publico ou privado
- - Clicar em Criar repositorio
+Para subir o repositório ao GitHub, primeiro é necessário criar um repositório vazio no GitHub:
+ - Indo ao seu perfil do GitHub, vá no ícone de "+" e selecione "New repository".
+ - Coloque um nome único para o seu repositório.
+ - Adicione uma descrição para explicar do que se trata o repositório.
+ - Marque a opção conforme necessário: repositório público ou privado.
+ - Clique em "Criar repositório".
 
- 
- Para subir modificaçãoes ao repositorio no github, seguimos os pasos de commit normal no
-    - git add .
-    - git commit -m "menssagem"
-    - git merge (se necesario) caso não seja feito, sera subida a branch, sem ter sido mescalda com a principal master/main
-    NOTA: e bom subir apenas a branch e depois fazer o merge para atualizar novamente.
-    NOTA: Antes de fazer os merge, e uma boa pratica atualizar com o git pull origin.
-    - Para subir de fato, usamos o comando Git push origin (nome da branch)
-    isso ira mostrar a nova branch que foi subida,
+Para subir modificações ao repositório no GitHub, seguimos os passos de commit normais:
+    - `git add .`
+    - `git commit -m "mensagem"`
+    - `git merge` (se necessário). Caso não seja feito, será subida a branch sem ter sido mesclada com a principal (master/main).
+    NOTA: É bom subir apenas a branch e depois fazer o merge para atualizar novamente.
+    NOTA: Antes de fazer o merge, é uma boa prática atualizar com o `git pull origin`.
+    - Para subir de fato, usamos o comando `git push origin (nome da branch)`.
+    Isso irá mostrar a nova branch que foi subida.
 
-Antes de criar a branch para iniciar o trablho, temos que ter certeza de estar na parte
-mais atualizada do projeto isso e feito atravez do seguente comando
+Antes de criar a branch para iniciar o trabalho, temos que ter certeza de estar na parte
+mais atualizada do projeto. Isso é feito através do seguinte comando:
 
-   - Git pull origin 
+   - `git pull origin`
 
-Pull Request (R/P)
-   - Para trabllhar com pr, primeiro debemos configurar o repositorio remoto nas Settings 
-   - Clicar na parte de branch, e marcar a opção (add branch protection rule)
-   - Marcar a primeira opção, que pede para a pessoa realizar uma pull Request antes de fazer o merge
-   - e configurar a quantidade de aprovações que precisa (3 normalmente)
-   - em padrão de nome, e sujerido colocar um * para representar todos os brannch do projeto
-   - clicar em save changes
-   Nota: Ao fazer o pull request o merge entre a branch que foi trabalhado e a principal sera feito automaticamente
-   apos a aprovação dela 
+Pull Request (PR):
+   - Para trabalhar com PR, primeiro devemos configurar o repositório remoto nas "Settings".
+   - Clique na parte de "Branches" e marque a opção "Add branch protection rule".
+   - Marque a primeira opção, que exige que a pessoa realize uma Pull Request antes de fazer o merge.
+   - Configure a quantidade de aprovações necessárias (normalmente 3).
+   - Em "Padrão de nome", é sugerido colocar um `*` para representar todas as branches do projeto.
+   - Clique em "Save changes".
+   Nota: Ao fazer o Pull Request, o merge entre a branch que foi trabalhada e a principal será feito automaticamente
+   após a aprovação dela.
 
-Git ignore
-   - Permite que sertos arquivos não sejam subidos ao repositorio remoto
-   - Basta apenas informar os arquivos a serem ignorados
-   - Para ignorar arquivos de uma mesma extenção, pasando desta forma (*.dart)
-   
+Git Ignore:
+   - Permite que certos arquivos não sejam enviados ao repositório remoto.
+   - Basta apenas informar os arquivos a serem ignorados.
+   - Para ignorar arquivos de uma mesma extensão, passe desta forma: `*.dart`.
