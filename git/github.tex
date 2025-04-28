@@ -5,13 +5,18 @@ Para subir o repositório ao GitHub, primeiro é necessário criar um repositór
  - Marque a opção conforme necessário: repositório público ou privado.
  - Clique em "Criar repositório".
 
+O repositório inicialmente estará vazio, e para subir meus arquivos, seguimos os passos no GitHub:
+ - `git remote add origin <link que estará disponível no GitHub>`
+   Esse comando irá adicionar ao repositório uma versão remota.
+ - Para subir de fato, usamos o comando `git push -u origin <nome da branch>`.
+
 Para subir modificações ao repositório no GitHub, seguimos os passos de commit normais:
     - `git add .`
     - `git commit -m "mensagem"`
     - `git merge` (se necessário). Caso não seja feito, será subida a branch sem ter sido mesclada com a principal (master/main).
     NOTA: É bom subir apenas a branch e depois fazer o merge para atualizar novamente.
     NOTA: Antes de fazer o merge, é uma boa prática atualizar com o `git pull origin`.
-    - Para subir de fato, usamos o comando `git push origin (nome da branch)`.
+    Depois, usar o comando `git push -u origin <nome da branch>`.
     Isso irá mostrar a nova branch que foi subida.
 
 Antes de criar a branch para iniciar o trabalho, temos que ter certeza de estar na parte
