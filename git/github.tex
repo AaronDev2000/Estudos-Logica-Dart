@@ -16,7 +16,7 @@ Para subir modificações ao repositório no GitHub, seguimos os passos de commi
     - `git merge` (se necessário). Caso não seja feito, será subida a branch sem ter sido mesclada com a principal (master/main).
     NOTA: É bom subir apenas a branch e depois fazer o merge para atualizar novamente.
     NOTA: Antes de fazer o merge, é uma boa prática atualizar com o `git pull origin`.
-    Depois, usar o comando `git push -u origin <nome da branch>`.
+    Depois, usar o comando `git push origin <nome da branch>`.
     Isso irá mostrar a nova branch que foi subida.
 
 Antes de criar a branch para iniciar o trabalho, temos que ter certeza de estar na parte
@@ -38,5 +38,5 @@ Git Ignore:
    - Permite que certos arquivos não sejam enviados ao repositório remoto.
    - Basta apenas informar os arquivos a serem ignorados.
    - Para ignorar arquivos de uma mesma extensão, passe desta forma: `*.dart`.
-   - Em caso de que um arquivo não esteja sendo ignorado, e necesario o segunete comando
-      git rm -r --cached <nome do arquivo> (esse comando remove o arquivo do rastreamento do git)
+   - Em caso de que um arquivo não esteja sendo ignorado, é necessário o seguinte comando:
+      `git rm -r --cached <nome do arquivo>` (esse comando remove o arquivo do rastreamento do Git).
