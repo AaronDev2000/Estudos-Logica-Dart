@@ -1,19 +1,19 @@
-// o tipo e List
-void main () {
-  // O conteudo e separado por ',' e todos os itens devem estar dentro dos corchetes []
-  // Da forma em que esta implementada esta lista, pode aceitar dados de qualquer tipo
+// O tipo é List
+void main() {
+  // O conteúdo é separado por ',' e todos os itens devem estar dentro dos colchetes []
+  // Da forma como está implementada esta lista, ela pode aceitar dados de qualquer tipo
   List nomes = ['Juan', 'Pedro', 'Marcia'];
   print(nomes);
 
-  // Para definir de que tipo sera o conteudo da lista, pasamos o tipo dentro do <> apos List, exemplo:
-  List<int> numeros = [4,8,20,80];
+  // Para definir de que tipo será o conteúdo da lista, passamos o tipo dentro do <> após List, exemplo:
+  List<int> numeros = [4, 8, 20, 80];
   print(numeros);
-  // Eu posso saber quantos itens tenho na minha lista, com o parametro .lenght
+  // Eu posso saber quantos itens tenho na minha lista com o parâmetro .length
   print(numeros.length);
-  // Para pegar o priemrio valor da lista, usamos o .fitst, e o ultimo o .last
-  // NOTA: nas listas  os itens possuem um indice, e o indice inicial sempre vai ser o '0', então, a lista numeros
-  // possue 4 itens, e vai do indice 0 ate o indice 3
-  // e agora para pegar o item, informamos o nome da lista e pasamos entre [] o numero do indice, desta forma retornamos o valor nesse indice
+  // Para pegar o primeiro valor da lista, usamos o .first, e o último o .last
+  // NOTA: nas listas, os itens possuem um índice, e o índice inicial sempre será o '0'. Então, a lista "numeros"
+  // possui 4 itens, e vai do índice 0 até o índice 3.
+  // Agora, para pegar o item, informamos o nome da lista e passamos entre [] o número do índice. Desta forma, retornamos o valor nesse índice.
   print(numeros[1]);
-  // então, para encontrar o ultimo iten a travez de seu indice, podemos usar a lista.lenght -1 (tamanho 4 -1 = 3 => indice 3)
+  // Então, para encontrar o último item através de seu índice, podemos usar a lista.length - 1 (tamanho 4 - 1 = 3 => índice 3)
 }
