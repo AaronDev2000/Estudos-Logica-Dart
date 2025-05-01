@@ -1,4 +1,4 @@
-void main () {
+void main() {
   // Gerar lista com valores repetidos, List.filled(recebe a quantidade de itens, depois o valor a ser gerado)
   List<int> maluca = List.filled(8, 100);
   print(maluca);
