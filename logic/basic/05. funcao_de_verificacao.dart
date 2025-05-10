@@ -3,10 +3,10 @@
 • Crie uma função chamada ehPrimo que receba um número inteiro e retorne true se o número for primo, e false caso contrário.
 • Exemplo: Para o número 7, a função deve retornar true porque 7 é primo.
 */
-
 void main() {
   print(ehPrimo(24));
 }
+
 bool ehPrimo(int numero) {
   // Verificamos se o número é menor ou igual a 1, pois esses números e números negativos não são primos - nesse caso retornamos false.
   if (numero <= 1) {
